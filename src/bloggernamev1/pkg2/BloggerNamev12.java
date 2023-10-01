@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
 
 
 /**
- *Hey Ken, Hope you having a good day.
+ *whahah
  *
  * @author tseid
  */
@@ -94,8 +94,8 @@ public class BloggerNamev12 {
             
         System.out.println(red+"Please enter " +yellow+"y"+red+" and "+ yellow+" n"+red+ " only"+reset);//output. (with colors) error message that says user must input "n" or "y" only.
             
-            System.out.println(yellow+"Please try again"+reset); //output. simply saying "try again."
-            System.out.println(green+"This is the end of the program"+reset);//output. end of the program.
+            System.out.println(yellow+"Please try again, maybe in another dimension..."+reset); //output. simply saying "try again."
+            System.out.println(green+"This is the end of the program. have a good life"+reset);//output. end of the program.
     
             return;
         
