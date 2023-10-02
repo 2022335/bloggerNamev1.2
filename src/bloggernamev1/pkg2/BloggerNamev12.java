@@ -38,8 +38,8 @@ public class BloggerNamev12 {
     
     String[] names = {"Mighty","Super","Beast","Untouchable","Pessimistic","Nerd","Greedy","Rich","All-time","No.1","Ace","Unity","RicknMorty","Something","FanBoy","FanGirl","Dictator","Believer","Dreamer","Mike","Chef","Accountant","Mr.","Mrs.","Miss","Morningstar","Saint","Prince","Queen","King","Darkness","Newcomer","WANTED"};
     // I used Stringarray [] to use multiple strings.
-    System.out.println(green+"Hey there, Welcome to Blogger name generator."+reset);
-    System.out.println(green+"Please enter your name:"+reset);
+    System.out.println("Hey there, Welcome to Blogger name generator."+reset);
+    System.out.println("green+Please enter your name:"+reset);
     
    
     String fullName = zz.nextLine(); //this is the line where the user input their name.
@@ -56,24 +56,24 @@ public class BloggerNamev12 {
      String[] input = fullName.split(" "); //split is for splitting fullname to firstName and lastName
     if (input.length < 2) { //if user enters less than 2 names (firstName lastName) system will shut down and ask the user try again.
         // and also if the user input more than 2 names system only catch first 2 names
-        System.out.println(red+"Please enter your First name and Last name."+reset);
-        System.out.println(yellow+"Please try again."+reset);
-        System.out.println(yellow+"This is the end of the program. . ."+reset);
+        System.out.println("Please enter your First name and Last name."+reset);
+        System.out.println("Please try again."+reset);
+        System.out.println("This is the end of the program. . ."+reset);
         return;
     }
     
     String firstName = fullName.split(" ")[0]; //Splits user input to two inputs
     String lastName = fullName.split(" ")[1]; // 2nd input
     
-    System.out.println(green+"Wonderful, I like your name "+yellow+firstName.toUpperCase()+" "+ lastName.toUpperCase()+reset );
+    System.out.println("Wonderful, I like your name "+firstName.toUpperCase()+" "+ lastName.toUpperCase()+reset );
      // OUTPUT 
       
     
     while (true){
         int sadInteger = sad.nextInt(32); //randomly pick up 33names to add and generate blogger name.
-        System.out.println(green+"Your blogger name is :  "+cyan+ names[sadInteger] + "  " +firstName.charAt(0) +lastName+reset);//Generates blogger name with 33 random words and takes 1st character from firstname and add to last name. Result: [random word]+1stCharacterOfFirstName+lastName. 
-        System.out.println(yellow+"Do you want new one?"+reset);//output program asks question about if the user satisfied with the result.
-        System.out.print(green+"Y/N? : "+reset);// "Yes" or "No" simple question. Y/N
+        System.out.println("Your blogger name is :  "+ names[sadInteger] + "  " +firstName.charAt(0) +lastName+reset);//Generates blogger name with 33 random words and takes 1st character from firstname and add to last name. Result: [random word]+1stCharacterOfFirstName+lastName. 
+        System.out.println("Do you want new one?"+reset);//output program asks question about if the user satisfied with the result.
+        System.out.print("Y/N? : "+reset);// "Yes" or "No" simple question. Y/N
         String response = zz.nextLine(); //input
         
         
@@ -86,16 +86,16 @@ public class BloggerNamev12 {
      }
        
         if (response.equalsIgnoreCase("n")){ // if the user satisfied wiht the result of blogger name 
-            System.out.println(green+"Glad you like it"+reset); //output. program appreciates the satisfaction of user.
-            System.out.print(green+"Program shut down successfully."+reset); //output. that program successfully shut down.
+            System.out.println("Glad you like it"+reset); //output. program appreciates the satisfaction of user.
+            System.out.print("Program shut down successfully."+reset); //output. that program successfully shut down.
             return;
             
         }else { //error: if the user input neither "n" or "y"
             
-        System.out.println(red+"Please enter " +yellow+"y"+red+" and "+ yellow+" n"+red+ " only"+reset);//output. (with colors) error message that says user must input "n" or "y" only.
+        System.out.println("Please enter " +"y"+" and "+" n"+red+ " only"+reset);//output. (with colors) error message that says user must input "n" or "y" only.
             
-            System.out.println(yellow+"Please try again, maybe in another dimension..."+reset); //output. simply saying "try again."
-            System.out.println(green+"This is the end of the program. have a good life"+reset);//output. end of the program.
+            System.out.println("Please try again, maybe in another dimension..."+reset); //output. simply saying "try again."
+            System.out.println("This is the end of the program. have a good life"+reset);//output. end of the program.
     
             return;
         
